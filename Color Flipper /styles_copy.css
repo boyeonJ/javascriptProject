@@ -157,18 +157,18 @@ Nav
 ===============
 */
 nav {
-  background: var(--clr-white);
   height: 3rem;
-  /* display: grid;
-  align-items: center; */
+  background: var(--clr-white);
   box-shadow: var(--dark-shadow);
+  display: grid;
+  align-items: center;
 }
 .nav-center {
+  display: flex;
+  align-items: center;
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 0 auto;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .nav-center h4 {
@@ -179,7 +179,6 @@ nav {
   display: flex;
 }
 nav a {
-  text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
   color: var(--clr-primary-1);
@@ -195,12 +194,12 @@ Container
 ===============
 */
 main {
-  min-height: calc(100vh - 3rem);
-  display: grid;
-  place-items: center;
+
 }
 .container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container h2 {
   background: var(--clr-black);
@@ -210,23 +209,24 @@ main {
   margin-bottom: 2.5rem;
 }
 .color {
-  color: var(--clr-primary-5);
 }
 .btn-hero {
   font-family: var(--ff-primary);
-  text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-black);
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  font-weight: 700;
-  transition: var(--transition);
-  border: 2px solid var(--clr-black);
   cursor: pointer;
+  color: var(--clr-black);
+
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  transition: var(--transition);
+  display: inline-block;
+
+  width: 150px;
+  border: 2px solid var(--clr-black);
   border-radius: var(--radius);
-  font-size: 1rem;
   padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  font-weight: 700;
 }
 .btn-hero:hover {
   color: var(--clr-white);

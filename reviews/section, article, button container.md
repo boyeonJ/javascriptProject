@@ -12,3 +12,4 @@ div 영역 내부에 (button-container)
 - button (prev-btn, next-btn)
 - i
 
+> [link](https://github.com/boyeonJ/javascriptProject/blob/main/reviews/index.html)https://github.com/boyeonJ/javascriptProject/blob/main/reviews/index.html

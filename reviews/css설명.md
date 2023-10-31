@@ -105,4 +105,23 @@ CSS의 `position` 속성은 요소를 어떻게 배치할지 결정하는 데 �
 
 4. **부모 요소 내에서 배치**: 이제 배치할 요소는 부모 요소 내에서 원하는 위치로 배치됩니다. 배치할 요소의 위치는 부모 요소의 좌상단 모서리를 기준으로 지정된 좌표에 따라 조정됩니다.
 
+# 04. [font awesome unicode](https://velog.io/@boyeon_jeong/css-font-awesome-Unicode)
+Font Awesome의 Unicode는 CSS의 `content` 속성과 함께 가상 요소를 사용하여 아이콘을 HTML 요소에 추가하는 데 유용합니다.
+
+**가상 요소로 아이콘 추가하기**:
+
+    ```css
+    .icon::before {
+        content: "\f10e"; /* Font Awesome 아이콘의 Unicode 코드 포인트 */
+        font-family: "Font Awesome 5 Free";
+    }
+    ```
+
+    ```html
+    <div class="icon"></div>
+    ```
+
+Font Awesome의 Unicode 코드 포인트를 사용하면 웹 페이지에서 아이콘을 텍스트와 함께 표시하거나 디자인 요소에 아이콘을 추가할 수 있으며, 이를 CSS 스타일링과 결합하여 아이콘을 원하는 대로 표현할 수 있습니다. 
+
+![](https://velog.velcdn.com/images/boyeon_jeong/post/65ef5160-f0fa-42e0-80e1-117e51693dcc/image.png)
 

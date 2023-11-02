@@ -1,19 +1,7 @@
-`e.currentTarget`를 사용하여 이벤트 대상의 클래스를 가져온 다음 다양한 방법으로 활용할 수 있습니다. 아래는 `e.currentTarget.classList`를 사용하는 몇 가지 예시입니다.
+classList의 contains, add, remove, toggle, replace 등의 함수를 통해 활용할 수 있습니다.
 
-1. 클래스 추가 및 제거:
-```javascript
-const element = e.currentTarget;
-element.classList.add('newClass'); // 'newClass' 클래스를 추가합니다.
-element.classList.remove('oldClass'); // 'oldClass' 클래스를 제거합니다.
-```
 
-2. 클래스 토글:
-```javascript
-const element = e.currentTarget;
-element.classList.toggle('active'); // 'active' 클래스를 토글합니다.
-```
-
-3. 클래스 존재 확인:
+### 1. 클래스 존재 확인: contains
 ```javascript
 const element = e.currentTarget;
 const hasClass = element.classList.contains('someClass'); // 'someClass' 클래스가 존재하는지 확인합니다.
@@ -22,20 +10,33 @@ if (hasClass) {
 }
 ```
 
-4. 클래스 대체:
+### 2. 클래스 추가 및 제거: add, remove
+```javascript
+const element = e.currentTarget;
+element.classList.add('newClass'); // 'newClass' 클래스를 추가합니다.
+element.classList.remove('oldClass'); // 'oldClass' 클래스를 제거합니다.
+```
+
+### 3. 클래스 토글: toggle
+```javascript
+const element = e.currentTarget;
+element.classList.toggle('active'); // 'active' 클래스를 토글합니다.
+```
+
+### 4. 클래스 대체: replace
 ```javascript
 const element = e.currentTarget;
 element.classList.replace('oldClass', 'newClass'); // 'oldClass'를 'newClass'로 대체합니다.
 ```
 
-5. 클래스 리스트 확인:
+### 5. 클래스 리스트 확인
 ```javascript
 const element = e.currentTarget;
 const classesList = Array.from(element.classList); // 클래스 리스트를 배열로 변환합니다.
 console.log(classesList);
 ```
 
-6. 클래스 이름 가져오기:
+### 6. 클래스 이름 가져오기
 ```javascript
 const element = e.currentTarget;
 const className = element.classList[0]; // 첫 번째 클래스 이름을 가져옵니다.

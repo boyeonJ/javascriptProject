@@ -108,3 +108,19 @@ nav {
         color: var(--clr-primary-7);
     }
 }
+
+/* section */
+
+.section-container {
+    padding: 5rem 0;
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+@media screen and (min-width: 800px) {
+    .section-container {
+        width: 95vw;
+    }
+}

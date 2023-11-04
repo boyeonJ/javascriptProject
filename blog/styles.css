@@ -47,6 +47,7 @@ nav {
     display: none;
 }
 
+
 .links {
     height: 0;
     overflow: hidden;
@@ -106,6 +107,14 @@ nav {
 
     .social-icons a:hover {
         color: var(--clr-primary-7);
+    }
+
+    .social-icons .dark-theme-btn {
+        color: var(--clr-grey-1);
+    }
+
+    .social-icons a:hover {
+        color: var(--clr-grey-4);
     }
 }
 

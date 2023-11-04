@@ -53,6 +53,41 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
+.dark-theme {
+  /* Dark shades of primary color */
+  --clr-primary-1: hsl(205, 86%, 10%); /* Darker than primary-1 */
+  --clr-primary-2: hsl(205, 77%, 20%); /* Darker than primary-2 */
+  --clr-primary-3: hsl(205, 72%, 30%); /* Darker than primary-3 */
+  --clr-primary-4: hsl(205, 63%, 40%); /* Darker than primary-4 */
+  /* Primary/main color */
+  --clr-primary-5: hsl(205, 78%, 50%); /* Darker than primary-5 */
+  /* Lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 60%); /* Darker than primary-6 */
+  --clr-primary-7: hsl(205, 90%, 66%); /* Darker than primary-7 */
+  --clr-primary-8: hsl(205, 86%, 71%); /* Darker than primary-8 */
+  --clr-primary-9: hsl(205, 90%, 78%); /* Darker than primary-9 */
+  --clr-primary-10: hsl(205, 100%, 86%); /* Darker than primary-10 */
+  /* Darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 10%); /* Darker than grey-1 */
+  --clr-grey-2: hsl(211, 39%, 15%); /* Darker than grey-2 */
+  --clr-grey-3: hsl(209, 34%, 20%); /* Darker than grey-3 */
+  --clr-grey-4: hsl(209, 28%, 29%); /* Darker than grey-4 */
+  /* Grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 39%); /* Darker than grey-5 */
+  --clr-grey-6: hsl(209, 23%, 50%); /* Darker than grey-6 */
+  --clr-grey-7: hsl(211, 27%, 60%); /* Darker than grey-7 */
+  --clr-grey-8: hsl(210, 31%, 70%); /* Darker than grey-8 */
+  --clr-grey-9: hsl(212, 33%, 79%); /* Darker than grey-9 */
+  --clr-grey-10: hsl(210, 36%, 86%); /* Darker than grey-10 */
+  --clr-white: #fff; /* Background color for dark mode */
+  --clr-red-dark: hsl(360, 67%, 30%); /* Darker than red-dark */
+  --clr-red-light: hsl(360, 71%, 50%); /* Darker than red-light */
+  --clr-green-dark: hsl(125, 67%, 30%); /* Darker than green-dark */
+  --clr-green-light: hsl(125, 71%, 50%); /* Darker than green-light */
+  --clr-black: #fff; /* Text and element color for dark mode */
+}
+
 /*
 =============== 
 Global Styles
@@ -72,6 +107,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  transition: var(--transition);
 }
 ul {
   list-style-type: none;

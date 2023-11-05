@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>filter</title>
+    <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="product">
+    <section class="products">
         <!-- https://www.linkedin.com/pulse/new-html-element-search-%C3%A1lvaro-montoro/ -->
         <search class="filters-container">
-            <form action=""><input type="text"></form>
-            <h5></h5>
-            <article>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <form class="input-form">
+                <input type="text" class="search-input" placeholder="search..." />
+            </form>
+            <h5>Company</h5>
+            <article class="companies">
+                <button>all</button>
+                <button>ikea</button>
+                <button>marcos</button>
             </article>
-        <search>
+        </search>
 
         <div class="products-container">
             <article class="product">
-                <img src="" alt="">
+                <img
+                  src="https://dl.airtable.com/.attachments/14ac9e946e1a02eb9ce7d632c83f742f/4fd98e64/product-1.jpeg"
+                  class="product-img img"
+                  alt=""
+                />
                 <footer>
-                    <h5 class="product-name"></h5>
-                    <span class="product-price"></span>
+                    <h5 class="product-name">emperor bed</h5>
+                    <span class="product-price">21.99</span>
                 </footer>
             </article>
         </div>
     </section>
-    
     <script src="./app.js"></script>
 </body>
 </html>

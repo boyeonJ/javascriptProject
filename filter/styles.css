@@ -1,0 +1,42 @@
+.products {
+    width: 90vw;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* https://velog.io/@teo/css-self-checklist */
+
+.filters-container {
+    /* width: fit-content; */
+}
+
+.search-input {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--clr-grey-9);
+    border-color: transparent;
+    border-radius: 0.2rem;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.7rem;
+}
+
+.companies button {
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 0.5rem;
+    color: var(--clr-grey-6);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin-left: 0.2rem;
+}
+
+.products-container {
+    background-color: antiquewhite;
+}
